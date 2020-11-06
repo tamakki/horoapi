@@ -19,12 +19,12 @@ app.use(cors());
 
 app.post("/api/horo/", async function (req, res) {
     const date = new Date(req.body.date);
-    const asteroids = req.body['asteroids[]'];
+    const bodies = req.body['bodies[]'];
     let result = {};
     await swisseph.swe_julday(date.getUTCFullYear(), date.getUTCMonth() + 1, date.getUTCDate(), date.getUTCHours(), swisseph.SE_GREG_CAL ,async function(julday_ut) {
         julday_ut += date.getMinutes() / (24 * 60);
-        for(let i = 0; i < asteroids.length; i++) {
-            const name = asteroids[i];
+        for(let i = 0; i < bodies.length; i++) {
+            const name = bodies[i];
             const param = eph_params[name];
             try {
                 await swisseph.swe_calc_ut(julday_ut, param, flag, function(body){
