@@ -1,0 +1,72 @@
+const swisseph = require('swisseph');
+const eph_params = {
+    'sun': swisseph.SE_SUN,
+    'moon': swisseph.SE_MOON,
+    'mercury': swisseph.SE_MERCURY,
+    'venus': swisseph.SE_VENUS,
+    'mars': swisseph.SE_MARS,
+    'jupiter': swisseph.SE_JUPITER,
+    'saturn': swisseph.SE_SATURN,
+    'uranus': swisseph.SE_URANUS,
+    'neputune': swisseph.SE_NEPTUNE,
+    'pluto': swisseph.SE_PLUTO,
+    // 月関係
+    'mean_node': swisseph.SE_MEAN_NODE,
+    'true_node': swisseph.SE_TRUE_NODE,
+    'mean_apogee': swisseph.SE_MEAN_APOG,
+    'intp_apogee': swisseph.SE_INTP_APOG,
+    // 小惑星
+    // 4大小惑星
+    'ceres': swisseph.SE_CERES,
+    'pallas': swisseph.SE_PALLAS,
+    'vesta': swisseph.SE_VESTA,
+    'juno': swisseph.SE_JUNO,
+    // ケンタウルス族
+    'chiron': swisseph.SE_CHIRON,
+    'chariklo': swisseph.SE_AST_OFFSET + 10199,
+    'elatus': swisseph.SE_AST_OFFSET + 31824,
+    'okyrhoe': swisseph.SE_AST_OFFSET + 52872,
+    'cyllarus': swisseph.SE_AST_OFFSET + 52975,
+    'Hylonome': swisseph.SE_AST_OFFSET + 10370,
+    'pholus': swisseph.SE_PHOLUS,
+    'asbolus': swisseph.SE_AST_OFFSET + 8405,
+    'bienor': swisseph.SE_AST_OFFSET + 54598,
+    'damocles': swisseph.SE_AST_OFFSET + 5335,
+    'ixion': swisseph.SE_AST_OFFSET + 28978,
+    // マイナー小惑星7天体
+    'varuna': swisseph.SE_VARUNA,
+    'mithra': swisseph.SE_AST_OFFSET + 4486,
+    'osiris': swisseph.SE_AST_OFFSET + 1923,
+    'isis': swisseph.SE_ISIS,
+    'lilith': swisseph.SE_AST_OFFSET + 1181,
+    // ウラニアン
+    'cupid': swisseph.SE_CUPIDO,
+    'hades': swisseph.SE_HADES,
+    'zeus': swisseph.SE_ZEUS,
+    'kronos': swisseph.SE_KRONOS,
+    'apollon': swisseph.SE_APOLLON,
+    'admetos': swisseph.SE_ADMETOS,
+    'valkanus': swisseph.SE_VULKANUS,
+    'poseidon': swisseph.SE_POSEIDON,
+    // ムーサ9柱
+    'kalliope': swisseph.SE_AST_OFFSET + 22,
+    'klio': swisseph.SE_AST_OFFSET + 84,
+    'euterpe': swisseph.SE_AST_OFFSET + 27,
+    'thalia': swisseph.SE_AST_OFFSET + 23,
+    'melpomene': swisseph.SE_AST_OFFSET + 18,
+    'terpsichore': swisseph.SE_AST_OFFSET + 81,
+    'erato': swisseph.SE_AST_OFFSET + 62,
+    'polyhymnia': swisseph.SE_AST_OFFSET + 33,
+    'urania': swisseph.SE_AST_OFFSET + 30,
+    // その他
+    'quaoar': swisseph.SE_AST_OFFSET + 50000,
+    'sedna': swisseph.SE_AST_OFFSET + 90377,
+    'eros': swisseph.SE_AST_OFFSET + 433,
+    'hekate': swisseph.SE_AST_OFFSET + 100,
+    'orcus': swisseph.SE_AST_OFFSET + 90482,
+    'eris': swisseph.SE_AST_OFFSET + 136199,
+    'pandora': swisseph.SE_AST_OFFSET + 55,
+    'icarus': swisseph.SE_AST_OFFSET + 1566,
+}
+
+module.exports = eph_params;
