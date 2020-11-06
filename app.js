@@ -9,7 +9,7 @@ swisseph.swe_set_ephe_path('./ephe');
 const flag = swisseph.SEFLG_SPEED | swisseph.SEFLG_SWIEPH;
 
 // サーバの立ち上げ
-const server = app.listen(3000, () => {
+const server = app.listen(process.env.PORT, () => {
     console.log('Node.js is listening to PORT:' + server.address().port);
 });
 
