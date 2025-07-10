@@ -7,7 +7,7 @@ import serverless from "serverless-http";
 
 const api = express();
 const router = Router();
-swisseph.swe_set_ephe_path('./ephe');
+swisseph.swe_set_ephe_path('../../ephe');
 const flag = swisseph.SEFLG_SPEED | swisseph.SEFLG_SWIEPH;
 
 
