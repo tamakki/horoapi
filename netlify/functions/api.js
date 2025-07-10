@@ -15,7 +15,7 @@ api.use(bodyParser.urlencoded({ extended: false }));
 api.use(bodyParser.json());
 api.use(cors());
 
-router.post("/api/horo/", async function (req, res) {
+router.post("/horo/", async function (req, res) {
     const date = new Date(req.body.date);
     const bodies = req.body['bodies[]'];
     let result = {};
