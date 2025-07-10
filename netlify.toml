@@ -1,2 +1,2 @@
 [build]
-  command = "node app.js"
+  command = "npm run"
