@@ -1,20 +1,20 @@
-const express = require('express');
-const app = express();
-const bodyParser = require('body-parser');
-const cors = require('cors');
-const swisseph = require('swisseph');
-const eph_params = require('./eph_params.js');
+import express from 'express';
+import bodyParser from 'body-parser';
+import cors from 'cors';
+import swisseph from 'swisseph';
+import eph_params from './eph_params.js';
 import serverless from "serverless-http";
 
+const api = express();
 swisseph.swe_set_ephe_path('./ephe');
 const flag = swisseph.SEFLG_SPEED | swisseph.SEFLG_SWIEPH;
 
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
-app.use(cors());
+api.use(bodyParser.urlencoded({ extended: false }));
+api.use(bodyParser.json());
+api.use(cors());
 
-app.post("/api/horo/", async function (req, res) {
+api.post("/api/horo/", async function (req, res) {
     const date = new Date(req.body.date);
     const bodies = req.body['bodies[]'];
     let result = {};
