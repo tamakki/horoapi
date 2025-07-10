@@ -1,20 +1,17 @@
 {
-  "name": "horo2",
+  "name": "functions",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "api.js",
   "scripts": {
-    "start": "node app.js",
-    "run": "node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@netlify/functions": "^4.1.10",
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "serverless-http": "^3.2.0",
-    "swisseph": "^0.5.15"
+    "@types/express": "^5.0.3",
+    "express": "^5.1.0",
+    "serverless-http": "^3.2.0"
   }
 }
