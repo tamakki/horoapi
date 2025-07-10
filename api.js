@@ -1,4 +1,4 @@
-import express from 'express';
+import express, {Router} from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import swisseph from 'swisseph';
@@ -6,6 +6,7 @@ import eph_params from './eph_params.js';
 import serverless from "serverless-http";
 
 const api = express();
+const router = Router();
 swisseph.swe_set_ephe_path('./ephe');
 const flag = swisseph.SEFLG_SPEED | swisseph.SEFLG_SWIEPH;
 
@@ -14,7 +15,7 @@ api.use(bodyParser.urlencoded({ extended: false }));
 api.use(bodyParser.json());
 api.use(cors());
 
-api.post("/api/horo/", async function (req, res) {
+router.post("/api/horo/", async function (req, res) {
     const date = new Date(req.body.date);
     const bodies = req.body['bodies[]'];
     let result = {};
@@ -34,5 +35,7 @@ api.post("/api/horo/", async function (req, res) {
     });
     res.json(result);
 });
+
+api.use("/api/", router);
 
 export const handler = serverless(api);
