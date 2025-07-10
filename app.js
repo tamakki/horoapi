@@ -4,14 +4,11 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const swisseph = require('swisseph');
 const eph_params = require('./eph_params.js');
+import serverless from "serverless-http";
 
 swisseph.swe_set_ephe_path('./ephe');
 const flag = swisseph.SEFLG_SPEED | swisseph.SEFLG_SWIEPH;
 
-// サーバの立ち上げ
-const server = app.listen(process.env.PORT, () => {
-    console.log('Node.js is listening to PORT:' + server.address().port);
-});
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -37,3 +34,5 @@ app.post("/api/horo/", async function (req, res) {
     });
     res.json(result);
 });
+
+export const handler = serverless(api);
