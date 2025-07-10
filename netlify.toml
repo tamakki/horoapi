@@ -1,2 +1,2 @@
 [build]
-  functions = "tamascope"
+  command = "node app.js"
