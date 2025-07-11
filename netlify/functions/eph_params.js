@@ -8,13 +8,13 @@ const eph_params = {
     'jupiter': swisseph.SE_JUPITER,
     'saturn': swisseph.SE_SATURN,
     'uranus': swisseph.SE_URANUS,
-    'neputune': swisseph.SE_NEPTUNE,
+    'neptune': swisseph.SE_NEPTUNE,
     'pluto': swisseph.SE_PLUTO,
     // 月関係
     'mean_node': swisseph.SE_MEAN_NODE,
     'true_node': swisseph.SE_TRUE_NODE,
     'mean_apogee': swisseph.SE_MEAN_APOG,
-    'intp_apogee': swisseph.SE_INTP_APOG,
+    'intp_apogee': swisseph.SE_OSCU_APOG,
     // 小惑星
     // 4大小惑星
     'ceres': swisseph.SE_CERES,
@@ -27,12 +27,14 @@ const eph_params = {
     'elatus': swisseph.SE_AST_OFFSET + 31824,
     'okyrhoe': swisseph.SE_AST_OFFSET + 52872,
     'cyllarus': swisseph.SE_AST_OFFSET + 52975,
-    'Hylonome': swisseph.SE_AST_OFFSET + 10370,
+    'hylonome': swisseph.SE_AST_OFFSET + 10370,
     'pholus': swisseph.SE_PHOLUS,
     'asbolus': swisseph.SE_AST_OFFSET + 8405,
     'bienor': swisseph.SE_AST_OFFSET + 54598,
     'damocles': swisseph.SE_AST_OFFSET + 5335,
     'ixion': swisseph.SE_AST_OFFSET + 28978,
+    'tantalus': swisseph.SE_AST_OFFSET + 2102,
+    'nessus': swisseph.SE_AST_OFFSET + 7066,
     // マイナー小惑星7天体
     'varuna': swisseph.SE_VARUNA,
     'mithra': swisseph.SE_AST_OFFSET + 4486,
@@ -40,7 +42,7 @@ const eph_params = {
     'isis': swisseph.SE_ISIS,
     'lilith': swisseph.SE_AST_OFFSET + 1181,
     // ウラニアン
-    'cupid': swisseph.SE_CUPIDO,
+    'cupido': swisseph.SE_CUPIDO,
     'hades': swisseph.SE_HADES,
     'zeus': swisseph.SE_ZEUS,
     'kronos': swisseph.SE_KRONOS,
@@ -58,15 +60,37 @@ const eph_params = {
     'erato': swisseph.SE_AST_OFFSET + 62,
     'polyhymnia': swisseph.SE_AST_OFFSET + 33,
     'urania': swisseph.SE_AST_OFFSET + 30,
-    // その他
-    'quaoar': swisseph.SE_AST_OFFSET + 50000,
-    'sedna': swisseph.SE_AST_OFFSET + 90377,
+    // モイライ
+    'moira' : swisseph.SE_AST_OFFSET + 638,
+    'klotho' : swisseph.SE_AST_OFFSET + 97,
+    'lachesis' : swisseph.SE_AST_OFFSET + 120,
+    'atropos' : swisseph.SE_AST_OFFSET + 273,
+    // ギリシャ神話
     'eros': swisseph.SE_AST_OFFSET + 433,
     'hekate': swisseph.SE_AST_OFFSET + 100,
-    'orcus': swisseph.SE_AST_OFFSET + 90482,
     'eris': swisseph.SE_AST_OFFSET + 136199,
     'pandora': swisseph.SE_AST_OFFSET + 55,
     'icarus': swisseph.SE_AST_OFFSET + 1566,
+    'astraea': swisseph.SE_AST_OFFSET + 5,
+    'hygiea': swisseph.SE_AST_OFFSET + 10,
+    'sappho': swisseph.SE_AST_OFFSET + 80,
+    // その他
+    'quaoar': swisseph.SE_AST_OFFSET + 50000,
+    'sedna': swisseph.SE_AST_OFFSET + 90377,
+    'orcus': swisseph.SE_AST_OFFSET + 90482,
+    'merlin': swisseph.SE_AST_OFFSET + 2598,
+    'bacchus': swisseph.SE_AST_OFFSET + 2063,
+    'karma': swisseph.SE_AST_OFFSET + 3811,
+    'daphne': swisseph.SE_AST_OFFSET + 41,
+    'alexandra': swisseph.SE_AST_OFFSET + 54,
+    'anpanman': swisseph.SE_AST_OFFSET + 46737,
+    'takoyaki': swisseph.SE_AST_OFFSET + 6562,
+    // 現代の人物
+    'hideakianno': swisseph.SE_AST_OFFSET + 9801,
+    'miyazakihayao': swisseph.SE_AST_OFFSET + 8883,
+    'yanase': swisseph.SE_AST_OFFSET + 46643,
+    'tezuka': swisseph.SE_AST_OFFSET + 3998,
+    'kinokonasu': swisseph.SE_AST_OFFSET + 54563,
 }
 
 module.exports = eph_params;
