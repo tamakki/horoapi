@@ -1,5 +1,5 @@
 [functions]
-  included_files = ["netlify/functions/ephe"]
+  included_files = ["netlify/functions/ephe/*"]
   external_node_modules = ["express",'body-parser','cors','swisseph','serverless-http']
   node_bundler = "esbuild"
 [[redirects]]
